@@ -17,3 +17,23 @@ function showSlides() {
   taskai[NuotrakuIndexas-1].className += " active";
   setTimeout(showSlides, 5000);
 }
+
+
+window.addEventListener("scroll", () => {
+  let scrollLine = document.querySelector(".kairine-linija .slinktis");
+  let line = document.querySelector(".kairine-linija .linija");
+
+  if (!scrollLine || !line) return;
+
+  // процент прокрутки страницы
+  let scrollTop = window.scrollY;
+  let docHeight = document.body.scrollHeight - window.innerHeight;
+  let scrollPercent = scrollTop / docHeight;
+
+  // максимальная позиция бегунка
+  let maxTop = line.offsetHeight - scrollLine.offsetHeight;
+
+  // вычисляем новое положение бегунка
+  let newTop = scrollPercent * maxTop;
+  scrollLine.style.top = newTop + "px";
+});
