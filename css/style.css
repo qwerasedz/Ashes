@@ -189,8 +189,8 @@ img {vertical-align: middle;}
 }
 
 .kairine-linija {
-  position: fixed;               /* фиксируем слева */
-  top: 50%;                      /* центр по вертикали */
+  position: fixed;               
+  top: 50%;                      
   left: 115px;
   transform: translateY(-50%);
   display: flex;
@@ -199,12 +199,12 @@ img {vertical-align: middle;}
   color: white;
   font-family: "Poppins";
   font-size: 14px;
-  z-index: 1000;                 /* поверх всего */
+  z-index: 1000;                 
 }
 
 .kairine-linija .linija {
   width: 2px;
-  height: 368px;                 /* длина линии */
+  height: 368px;                 
   background: rgba(255, 255, 255, 0.4);
   margin: 15px 0;
   position: relative;
@@ -214,13 +214,13 @@ img {vertical-align: middle;}
 
 .kairine-linija .slinktis {
   width: 20px;
-  height: 80px;                  /* длина бегунка */
+  height: 80px;                 
   background: white;
   border-radius: 2px;
-  position: absolute;            /* обязательно для top */
-  top: 0;                        /* стартовая позиция */
+  position: absolute;            
+  top: 0;                        
   left: 50%;
   transform: translateX(-50%);
-  transition: top 0.3s ease;     /* плавное движение */
+  transition: top 0.3s ease;     
 }
 
