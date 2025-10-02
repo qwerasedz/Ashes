@@ -3,51 +3,6 @@ body {
   padding: 0;
 }
 
-.navigacija {
-  background: rgba(0,0,0,0.65);
-  position: absolute;
-  width: 100%;
-  z-index: 1000;
-}
-
-.nav-container {
-  max-width: 3000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px 40px;
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-}
-
-.navigacija ul {
-  margin-left: 640px; 
-  display: flex;
-  gap: 80px;
-  list-style: none;
-}
-
-.navigacija ul li a {
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
-  line-height: 26px;
-  color: #fefeff;
-  font-weight: 400;
-  font-family: "Poppins";
-}
-
-.navigacija ul li a:hover {
-  color: #ffcc00;
-}
-
 main{
   color: #fefeff;
   font-family: "Poppins";
