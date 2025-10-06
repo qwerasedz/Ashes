@@ -1,0 +1,28 @@
+footer{
+    text-align: center;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+footer ul{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.subbtn{
+    margin: 0;
+}
+
+footer h1{
+    margin: 0;
+}
