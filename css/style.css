@@ -1,3 +1,4 @@
+/* Pagrindinis */
 body {
   margin: 0;
   padding: 0;
@@ -52,10 +53,6 @@ main{
   color: #fefeff;
   font-family: "Poppins";
 }
-
-* {box-sizing: border-box;}
-.nuotraukos {display: none;}
-img {vertical-align: middle;}
 
 .slaiduConteineris {
   width: 100%;
@@ -222,5 +219,23 @@ img {vertical-align: middle;}
   left: 50%;
   transform: translateX(-50%);
   transition: top 0.3s ease;     
+}
+
+/* What we do */
+.fonas {
+  width: 100%;
+  height: 100vh;      
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.tekstas {
+  color: black;
+  font-family: "Poppins";
+}
+
+.tekstas1{
+  text-align: center;
 }
 
