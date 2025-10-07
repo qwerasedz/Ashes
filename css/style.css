@@ -1,123 +1,84 @@
-/* Pagrindinis */
 body {
   margin: 0;
   padding: 0;
-}
-
-.navigacija {
-  background: rgba(0,0,0,0.65);
-  position: absolute;
-  width: 100%;
-  z-index: 1000;
-}
-
-.nav-container {
-  max-width: 3000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px 40px;
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-}
-
-.navigacija ul {
-  margin-left: 640px; 
-  display: flex;
-  gap: 80px;
-  list-style: none;
-}
-
-.navigacija ul li a {
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
-  line-height: 26px;
-  color: #fefeff;
-  font-weight: 400;
+  overflow-x: hidden;
   font-family: "Poppins";
 }
 
-.navigacija ul li a:hover {
-  color: #ffcc00;
-}
-
-main{
+main {
   color: #fefeff;
   font-family: "Poppins";
 }
 
-.slaiduConteineris {
+.skaidriu-konteineris {
+  display: block;
+  max-width: 100%;
   width: 100%;
-  height: 100vh;      
+  height: 100vh;
   position: relative;
   margin: 0;
   overflow: hidden;
-}
+}  
 
-.slaiduConteineris img {
+.skaidriu-konteineris img {
   width: 100%;
-  height: 100%;           
-  object-fit: cover;      
+  height: 100vh;
+  object-fit: cover;
   display: block;
 }
 
+.taskai {
+  position: absolute;
+  bottom: 120px;
+  left: 22%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
 
 .taskas {
+  padding: 0;
   height: 20px;
   width: 20px;
-  bottom: 140px;
-  left: 360px;
-  position: relative;
-  margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active {
+.aktyvus {
   background-color: #717171;
 }
 
 .animacija {
+  overflow-x: hidden;
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from { opacity: .4 } 
+  to { opacity: 1 }
 }
 
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px} }
-
-.Pagrindinis_tekstas{
+.pagrindinis-tekstas {
   position: absolute;
   top: 173px;
   right: 1000px;
 }
 
-.creative{
+.kurybinis {
   font-size: 90px;
   line-height: 100px;
   letter-spacing: 5px;
 }
 
-.there{
+.ten {
   position: relative;
   bottom: 40px;
 }
 
-.border-button {
+.remelio-mygtukas {
   text-decoration: none;
   display: inline-block;
   padding: 17px 30px;
@@ -131,63 +92,73 @@ main{
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.border-button:before, .border-button:after {
-  content: "";
+
+.remelio-mygtukas:before,
+.remelio-mygtukas:after {
   position: absolute;
   width: 0;
   height: 0;
   opacity: 0;
   box-sizing: border-box;
 }
-.border-button:before {
+
+.remelio-mygtukas:before {
   bottom: 0;
   left: 0;
   border-left: 1px solid white;
   border-top: 1px solid white;
   transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
 }
-.border-button:after {
+
+.remelio-mygtukas:after {
   top: 0;
   right: 0;
   border-right: 1px solid white;
   border-bottom: 1px solid white;
   transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
 }
-.border-button:hover:before, 
-.border-button:hover:after {
+
+.remelio-mygtukas:hover:before,
+.remelio-mygtukas:hover:after {
   height: 100%;
   width: 100%;
   opacity: 1;
 }
-.border-button:hover:before {
+
+.remelio-mygtukas:hover:before {
   transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
 }
-.border-button:hover:after {
+
+.remelio-mygtukas:hover:after {
   transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
 }
-.border-button:hover {
+
+.remelio-mygtukas:hover {
   background: rgba(255, 255, 255, .2);
 }
 
 @media (max-width: 768px) {
-  .creative {
+  .kurybinis {
     font-size: 40px;
   }
-  .there {
+
+  .ten {
     font-size: 16px;
   }
-  .Pagrindinis_tekstas {
+
+  .pagrindinis-tekstas {
     left: 40px;
     right: 40px;
   }
-  .left-line {
+
+  .kairine-linija {
     left: 10px;
   }
 }
 
 .kairine-linija {
-  position: fixed;               
-  top: 50%;                      
+  position: fixed;
+  top: 50%;
   left: 115px;
   transform: translateY(-50%);
   display: flex;
@@ -196,12 +167,12 @@ main{
   color: white;
   font-family: "Poppins";
   font-size: 14px;
-  z-index: 1000;                 
+  z-index: 1000;
 }
 
 .kairine-linija .linija {
   width: 2px;
-  height: 368px;                 
+  height: 368px;
   background: rgba(255, 255, 255, 0.4);
   margin: 15px 0;
   position: relative;
@@ -211,31 +182,228 @@ main{
 
 .kairine-linija .slinktis {
   width: 20px;
-  height: 80px;                 
+  height: 80px;
   background: white;
   border-radius: 2px;
-  position: absolute;            
-  top: 0;                        
+  position: absolute;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
-  transition: top 0.3s ease;     
+  transition: top 0.3s ease;
 }
 
-/* What we do */
-.fonas {
+.ka-darome-sekcija {
+  padding: 80px 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.konteineris {
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
-  height: 100vh;      
-  position: relative;
-  margin: 0;
-  overflow: hidden;
 }
 
-.tekstas {
-  color: black;
-  font-family: "Poppins";
-}
-
-.tekstas1{
+.sekcijos-pavadinimas {
   text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 
+.pabraukimas {
+  width: 60px;
+  height: 3px;
+  background-color: #333;
+  margin: 0 auto 60px;
+}
+
+.paslaugu-konteineris {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.paslaugos-kortele {
+  background: white;
+  border: 2px solid #ddd;
+  padding: 40px 30px;
+  text-align: center;
+  width: 320px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.paslaugos-kortele:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.ikonos-konteineris {
+  margin-bottom: 30px;
+}
+
+.paslaugos-ikona {
+  width: 60px;
+  height: 60px;
+  color: #333;
+  stroke-width: 1.5;
+}
+
+.paslaugos-pavadinimas {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+.paslaugos-aprasymas {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.skaityti-daugiau {
+  background-color: #666;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skaityti-daugiau:hover {
+  background-color: #333;
+}
+
+.navigacijos-valdymas {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.navigacijos-mygtukas {
+  width: 50px;
+  height: 50px;
+  background-color: #666;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.navigacijos-mygtukas:hover {
+  background-color: #333;
+}
+
+.navigacijos-mygtukas svg {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.kitas {
+  background-color: #666;
+}
+
+@media (max-width: 768px) {
+  .konteineris {
+    max-width: 768px;
+  }
+
+  .sekcijos-pavadinimas {
+    font-size: 2rem;
+  }
+
+  .paslaugu-konteineris {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .paslaugos-kortele {
+    width: 100%;
+    max-width: 350px;
+    padding: 30px 25px;
+    min-height: 350px;
+  }
+
+  .paslaugos-ikona {
+    width: 50px;
+    height: 50px;
+  }
+
+  .paslaugos-pavadinimas {
+    font-size: 1rem;
+  }
+
+  .paslaugos-aprasymas {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ka-darome-sekcija {
+    padding: 60px 15px;
+  }
+
+  .sekcijos-pavadinimas {
+    font-size: 1.8rem;
+  }
+
+  .paslaugos-kortele {
+    padding: 25px 20px;
+    min-height: 320px;
+  }
+
+  .paslaugos-ikona {
+    width: 45px;
+    height: 45px;
+  }
+
+  .navigacijos-mygtukas {
+    width: 45px;
+    height: 45px;
+  }
+
+  .navigacijos-mygtukas svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .paslaugu-konteineris {
+    gap: 25px;
+  }
+
+  .paslaugos-kortele {
+    width: 280px;
+    min-height: 380px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .paslaugu-konteineris {
+    gap: 30px;
+  }
+
+  .paslaugos-kortele {
+    width: 320px;
+  }
+}

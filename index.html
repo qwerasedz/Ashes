@@ -3,102 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dokumentas</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="/JS/script.js" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
 </head>
 <body>
     <nav>
-<div class="navigacija">
-  <div class="nav-container">
-    <a href="index.html" class="logo">HighTech</a>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="pages/about.html">About</a></li>
-      <li><a href="pages/whatwedo.html">What we do</a></li>
-      <li><a href="pages/portfolio.html">Portfolio</a></li>
-      <li><a href="pages/contact.html">Contact Us</a></li>
-      <li><a href="pages/login.html">Login</a></li>
-      <li><a class="search"><span class="material-symbols-outlined">search</span></a></li>
-    </ul>
-  </div>
-</div>
-</nav>
+        <div class="navigacija">
+            <div class="navigacijos-konteineris">
+                <a href="index.html" class="logotipas">HighTech</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/whatwedo.html">What we do</a></li>
+                    <li><a href="pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="pages/contact.html">Contact Us</a></li>
+                    <li><a href="pages/login.html">Login</a></li>
+                    <li><a class="paieska"><span class="material-symbols-outlined">search</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <main>
         <article>
-    <div class="slaiduConteineris">
-
-      <div class="nuotraukos animacija">
-        <img src="/IMG/Lempute.jpg">
-      </div>
-      <div class="nuotraukos animacija">
-        <img src="/IMG/Lempute2.jpg">
-      </div>
-      <div class="nuotraukos animacija">
-        <img src="/IMG/Lempute3.jpg">
-      </div>
-            <div class="nuotraukos animacija">
-        <img src="/IMG/Lempute4.jpg">
-      </div>
-        <br>     
+            <div class="skaidriu-konteineris">
+                <div class="nuotraukos animacija">
+                    <img src="/IMG/Lempute.jpg">
+                </div>
+                <div class="nuotraukos animacija">
+                    <img src="/IMG/Lempute2.jpg">
+                </div>
+                <div class="nuotraukos animacija">
+                    <img src="/IMG/Lempute3.jpg">
+                </div>
+                <div class="nuotraukos animacija">
+                    <img src="/IMG/Lempute4.jpg">
+                </div>
+                <br>     
         </article>
+
         <article>
-            <nav>
+            <nav class="taskai">
                 <span class="taskas"></span>
                 <span class="taskas"></span>
                 <span class="taskas"></span>
                 <span class="taskas"></span>
             </nav>
         </article>
-        <article class="Pagrindinis_tekstas">
-            <h1 class="creative">Creative <br> 
-                Work Idea</h1>
-                <p class="there">There are mani variantions of passages of Lorem ipsum <br>
-                     available, but the majority have sufferes alteration
-                </p>
-                <nav>
-                    <a href="" class="border-button">About Company</a>
-                    <a href="" class="border-button">Contact Us</a>
-                </nav>
+
+        <article class="pagrindinis-tekstas">
+            <h1 class="kurybinis">Creative <br> Work Idea</h1>
+            <p class="ten">
+                There are mani variantions of passages of Lorem ipsum <br>
+                available, but the majority have sufferes alteration
+            </p>
+            <nav>
+                <a href="" class="remelio-mygtukas">About Company</a>
+                <a href="" class="remelio-mygtukas">Contact Us</a>
+            </nav>
         </article>
+
         <nav>
             <div class="kairine-linija">
-            <span>01</span>
-            <div class="linija">
-            <div class="slinktis"></div>
-            </div>
-            <span>02</span>
+                <span>01</span>
+                <div class="linija">
+                    <div class="slinktis"></div>
+                </div>
+                <span>02</span>
             </div>
         </nav>
     </main>
-    <main>
-        <article class="fonas">
-        </article>
-        <article class="tekstas">
-             <h1 class="tekstas1">What we do</h1>
-            <hr style="width: 4.5%; height: 10px; background-color: black;">
-            <table>
-                <tr>
-                 <h1>WEBSITE DEVELOPMENT</h1>
-                <p>
-                    many variantions of passages of Lorem ipsum available, but the majority have suffrred alteration in some forms, by injected humour, or randomised works which 
-                </p>
-                </tr>
-                <tr>
-                    <h1>APP DEVELOPMENT</h1>
-                    <p>
-                       many variantions of passages of Lorem ipsum available, but the majority have suffrred alteration in some forms, by injected humour, or randomised works which 
+
+    <section class="ka-darome-sekcija">
+        <div class="konteineris">
+            <h2 class="sekcijos-pavadinimas">WHAT WE DO</h2>
+            <div class="pabraukimas"></div>
+
+            <div class="paslaugu-konteineris">
+                <div class="paslaugos-kortele">
+                    <div class="ikonos-konteineris">
+                        <svg class="paslaugos-ikona" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                            <path d="M2 12h20"/>
+                        </svg>
+                    </div>
+                    <h3 class="paslaugos-pavadinimas">WEBSITE<br>DEVELOPMENT</h3>
+                    <p class="paslaugos-aprasymas">
+                        many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
                     </p>
-                </tr>
-                <tr>
-                    <h1>WEBSITE DESING</h1>
-                     <p>
-                       many variantions of passages of Lorem ipsum available, but the majority have suffrred alteration in some forms, by injected humour, or randomised works which 
+                    <button class="skaityti-daugiau">Read More</button>
+                </div>
+
+                <div class="paslaugos-kortele">
+                    <div class="ikonos-konteineris">
+                        <svg class="paslaugos-ikona" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="4" y="2" width="16" height="20" rx="2"/>
+                            <path d="M8 6h8"/>
+                            <path d="M8 10h8"/>
+                            <path d="M8 14h5"/>
+                        </svg>
+                    </div>
+                    <h3 class="paslaugos-pavadinimas">APP<br>DEVELOPMENT</h3>
+                    <p class="paslaugos-aprasymas">
+                        many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
                     </p>
-                </tr>
-            </table>
-        </article>
-    </main>
+                    <button class="skaityti-daugiau">Read More</button>
+                </div>
+
+                <div class="paslaugos-kortele">
+                    <div class="ikonos-konteineris">
+                        <svg class="paslaugos-ikona" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M10 4v4"/>
+                            <path d="M2 8h20"/>
+                            <path d="M6 4v4"/>
+                        </svg>
+                    </div>
+                    <h3 class="paslaugos-pavadinimas">WEBSITE<br>DESIGN</h3>
+                    <p class="paslaugos-aprasymas">
+                        many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
+                    </p>
+                    <button class="skaityti-daugiau">Read More</button>
+                </div>
+            </div>
+
+            <div class="navigacijos-valdymas">
+                <button class="navigacijos-mygtukas ankstesnis" id="ankstesnisMygtukas">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="navigacijos-mygtukas kitas" id="kitasMygtukas">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="prenumeratos-blokas">
+            <h1>HighTech</h1>
+            <input type="email" placeholder="Enter Your email"> 
+            <input type="submit" value="SUBSCRIBE NOW">
+        </div>
+        <ul>
+            <li class="sekcija">NAUDINGOS NUORODOS</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">What we do</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Why choose us</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+        <ul>
+            <li class="sekcija">NAUJIENOS</li>
+            <li><a href="">It is a long established</a></li>
+            <li><a href="">fact that a reader will</a></li>
+            <li><a href="">be distracted by the</a></li>
+            <li><a href="">readable content of a</a></li>
+            <li><a href="">page when</a></li>
+        </ul>
+        <ul>
+            <li class="sekcija">ĮMONĖ</li>
+            <li><a href="">It is a long established</a></li>
+            <li><a href="">fact that a reader will</a></li>
+            <li><a href="">be distracted by the</a></li>
+            <li><a href="">readable content of a</a></li>
+            <li><a href="">page when</a></li>
+        </ul>
+        <ul>
+            <li class="sekcija">KONTAKTAI</li>
+            <li><a href="">Location</a></li>
+            <li><a href="">Call +777 777 77777</a></li>
+            <li><a href="ashes@gmail.com"></a></li>
+        </ul>
+    </footer>
 </body>
 </html>
