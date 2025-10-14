@@ -5,7 +5,7 @@
   z-index: 1000;
 }
 
-.nav-container {
+.navigacijos-konteineris {
   max-width: 3000px;
   margin: 0 auto;
   display: flex;
@@ -14,7 +14,7 @@
   padding: 20px 40px;
 }
 
-.logo {
+.logotipas {
   font-size: 22px;
   font-weight: bold;
   color: white;

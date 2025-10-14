@@ -11,10 +11,10 @@ function showSlides() {
   NuotrakuIndexas++;
   if (NuotrakuIndexas > slaidai.length) {NuotrakuIndexas = 1}    
   for (i = 0; i < taskai.length; i++) {
-    taskai[i].className = taskai[i].className.replace(" active", "");
+    taskai[i].className = taskai[i].className.replace(" aktyvus", "");
   }
   slaidai[NuotrakuIndexas-1].style.display = "block";  
-  taskai[NuotrakuIndexas-1].className += " active";
+  taskai[NuotrakuIndexas-1].className += " aktyvus";
   setTimeout(showSlides, 5000);
 }
 
@@ -31,3 +31,6 @@ window.addEventListener("scroll", () => {
   let newTop = scrollPercent * maxTop;
   scrollLine.style.top = newTop + "px";
 });
+
+
+
